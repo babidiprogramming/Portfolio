@@ -114,6 +114,16 @@ a:hover{
     margin: 0 4rem 0 4rem;
 
 }
+/**************ABOUT SECTION*********************/
+.about-section-container .text-container{
+    margin-top: 2rem;
+}
+.text-container p{
+  color: rgb(161, 156, 156);
+}
+.text-container b{
+    color: rgb(255, 255, 255);
+}
 /***************CONTACT SECTION******************/
 .section form{
     width: 650px;
@@ -145,6 +155,10 @@ form button
     border-radius: 5px;
     box-shadow: 0 0 10px #0ef;
     width: 105%;
+    cursor: pointer;
+}
+form button:hover{
+    box-shadow: none;
 }
 /**************SECTION**************************/
 
