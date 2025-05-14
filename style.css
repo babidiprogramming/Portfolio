@@ -160,11 +160,24 @@ form button
 form button:hover{
     box-shadow: none;
 }
+/**************TECH SECTION******************/
+
+.tech-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.tech-item img{
+    height: 60px;
+    width: 60px;
+}
+
 /**************SECTION**************************/
 
 .section{
     display: flex;
-
     position: relative;
     min-height: 80vh;
     margin: 5vh;

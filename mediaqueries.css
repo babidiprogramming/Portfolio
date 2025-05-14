@@ -1,28 +1,99 @@
-/* Responsive Styles */
-@media (max-width: 768px) {
+/* Add this at the bottom of your CSS file */
+
+/* General adjustments for smaller screens */
+@media (max-width: 1200px) {
     .sidebar {
-        transform: translateX(-100%);
+        width: 300px;
+        margin-left: 0;
+        padding: 20px;
     }
 
-    .sidebar.active {
-        transform: translateX(0);
+    .content {
+        margin-left: 320px;
+        margin-top: 2rem;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .social-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .icon {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        text-align: center;
     }
 
     .content {
         margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .tech-container {
+        grid-template-columns: auto auto;
+        gap: 1rem;
+    }
+
+    .section {
+        flex-direction: column;
+        margin: 2vh;
+    }
+
+    form {
         width: 100%;
     }
 
-    .menu-toggle {
-        display: block;
-        position: fixed;
-        top: 15px;
-        left: 15px;
-        background-color: #333;
-        color: #fff;
-        border: none;
-        padding: 10px 15px;
-        cursor: pointer;
-        z-index: 1000;
+    form .input-box {
+        flex-direction: column;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .sidebar {
+        display: none; /* Hide sidebar for mobile */
+    }
+
+    .content {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .tech-container {
+        grid-template-columns: auto;
+    }
+
+    .section {
+        margin: 2vh 0;
+    }
+
+    .footer {
+        text-align: center;
+        font-size: 0.7rem;
     }
 }
