@@ -127,6 +127,7 @@ a:hover{
 }
 .text-container p{
   color: rgb(161, 156, 156);
+  margin: auto;
 }
 .text-container b{
     color: rgb(255, 255, 255);
@@ -161,7 +162,7 @@ form button
     outline: none;
     border-radius: 5px;
     box-shadow: 0 0 10px #0ef;
-    width: 105%;
+    width: 100%;
     cursor: pointer;
 }
 form button:hover{
@@ -173,6 +174,7 @@ form button:hover{
     display: flex;
     position: relative;
     min-height: 80vh;
+    height: auto;
     margin: 5vh;
 }
 .section-container{
@@ -193,16 +195,31 @@ form button:hover{
 
 .tech-container{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px 100px;
     align-items: center;
-    text-align: center;
-    justify-content: center;
+    justify-items: center;
   }
   .tech-item img{
       height: 60px;
       width: 60px;
   }
-  
+.tech-container p {
+    text-align: center;
+    align-items: center;
+}
+/**************PROJECT SECTION******************/
+.project-container{
+  margin-top: 3rem;
+}
+.project-container p{
+    text-align: center;
+    color: rgb(161, 156, 156);
+    margin: auto;
+}
+.project-container b{
+    color: rgb(255, 255, 255);
+}
 /******************************footer*****************************/
 .footer
 {
