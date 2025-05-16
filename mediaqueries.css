@@ -45,9 +45,11 @@
     }
 
     .nav-links {
-        display: flex;
-        justify-content: center;
+        display: none; /* Hide nav links for tablet */
         gap: 1rem;
+    }
+    .social-container{
+        justify-content: center;
     }
 
     .tech-container {
@@ -83,7 +85,6 @@
         margin: 0;
         padding: 1rem;
     }
-
     .tech-container {
         grid-template-columns: auto;
     }
