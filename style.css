@@ -9,7 +9,14 @@
 body
 {
  font-family: "Poppins", sans-serif;
- background: rgb(0, 0, 10);
+ background:linear-gradient(
+    to bottom,
+    #03002e,
+    #0f0e2d,
+    #18172b,
+    #21202a,
+    #282828
+  );
  
 }
 html
@@ -160,20 +167,6 @@ form button
 form button:hover{
     box-shadow: none;
 }
-/**************TECH SECTION******************/
-
-.tech-container{
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
-.tech-item img{
-    height: 60px;
-    width: 60px;
-}
-
 /**************SECTION**************************/
 
 .section{
@@ -196,6 +189,20 @@ form button:hover{
     text-align: center;
     font-size: 1.5rem;
 }
+/**************TECH SECTION******************/
+
+.tech-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .tech-item img{
+      height: 60px;
+      width: 60px;
+  }
+  
 /******************************footer*****************************/
 .footer
 {
