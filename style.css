@@ -23,7 +23,8 @@ html
 {
     scroll-behavior: smooth;
 }
-
+/*********SIDEBAR**********/
+/* Sidebar styles */
 .sidebar {
     width: 550px;
     height: 100vh;
@@ -45,7 +46,6 @@ html
     font-size: 1.2rem;
   
 }
-
 .nav-links {
     padding: 0;
     margin: 0;
@@ -90,6 +90,27 @@ a:hover{
     color: #ffffff;
     font-size: 2.2rem;
     margin-top: 10px;}
+.sidebar .qtext .gradient-colors{
+    background: linear-gradient(
+    90deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(224deg 100% 30%) 14%,
+    hsl(221deg 100% 38%) 29%,
+    hsl(221deg 100% 44%) 43%,
+    hsl(220deg 100% 50%) 57%,
+    hsl(213deg 99% 56%) 68%,
+    hsl(205deg 97% 58%) 78%,
+    hsl(197deg 96% 60%) 85%,
+    hsl(190deg 94% 61%) 91%,
+    hsl(190deg 94% 68%) 95%,
+    hsl(189deg 95% 73%) 97%,
+    hsl(187deg 96% 77%) 99%,
+    hsl(185deg 98% 81%) 100%);
+     -webkit-background-clip: text; 
+ -webkit-text-fill-color: transparent; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 /**************ICONS********************/
 .social-container{
@@ -115,6 +136,7 @@ a:hover{
     align-items: center;
     color: #ffffff;
     margin-top: 7rem;
+    height: auto;
 }
 .content p{
     text-align: justify;
@@ -127,7 +149,7 @@ a:hover{
 }
 .text-container p{
   color: rgb(161, 156, 156);
-  margin: auto;
+  margin: 2rem 0;
 }
 .text-container b{
     color: rgb(255, 255, 255);
@@ -173,8 +195,8 @@ form button:hover{
 .section{
     display: flex;
     position: relative;
-    min-height: 80vh;
     height: auto;
+    min-height: 80vh;
     margin: 5vh;
 }
 .section-container{
@@ -215,7 +237,7 @@ form button:hover{
 .project-container p{
     text-align: center;
     color: rgb(161, 156, 156);
-    margin: auto;
+    margin: 1rem;;
 }
 .project-container a{
    text-align: center;
@@ -239,6 +261,15 @@ form button:hover{
 .project-container .link-project a {
     margin-right: 1.5rem;
     font-size: small;
+}
+.project-container:hover{
+    background-color: rgba(255, 255, 255, 0.06);
+	-webkit-backdrop-filter: blur(15px);
+	backdrop-filter: blur(15px);
+	border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    min-height: auto;
+    
 }
 /******************************footer*****************************/
 .footer
