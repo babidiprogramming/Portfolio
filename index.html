@@ -11,7 +11,7 @@
     <title>PRC.DEV</title>
 </head>
 <body>
-    <aside class="sidebar">
+    <aside class="sidebar" data-aos="fade-right">
         <div class="logo"><h1>Hello, Im Prince Rey 👋 </h1></div>
         <div class="qtext"><h1>Turning Ideas into </h1><h1 class="gradient-colors">Web Experiences </h1></div>
         <nav class="nav">
@@ -90,10 +90,22 @@
                             <a href="https://github.com/babidiprogramming/Portfolio">github.com/babidiprogramming/Portfolio</a>
                         </div>
             </div>
+            <div class="project-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="500ms">
+                        <h3>Inventory Management System (IMS) | EJS Backend Basic </h3>
+                        <p>This project is about to showcase the simple backend application with <b>Node.js, Express, EJS,</b> and <b> MongoDB</b>.</p>
+                        <div class="link-project">
+                            <img src="assets/link.png" alt="link">
+                            <a href="">here</a>
+                            <br>
+                            <img src="assets/github.png" alt="github">
+                            <a href="https://github.com/babidiprogramming/Final-Project-IMS-">github.com/babidiprogramming/Portfolio</a>
+                        </div>
+            </div>
         </section>
-        <section class="section" id="contacts">
+        <section class="section" id="contacts" >
             <div class="title_header"><a>C O N T A C T S</a></div> 
-                <form action="/action_page.php">
+            <div class="contact_form" data-aos="fade-left">
+                 <form action="/#">
                     <div class="input-box">
                         <div class = "input-field field">
                             <label for="fname">Name</label>
@@ -109,8 +121,10 @@
                     <label for="subject">Message</label>
                     <textarea id="subject" class="item" name="subject" placeholder="Please Message .." style="height:200px"></textarea>
                   </div>  
-                   <button type="submit"> Send Message</button>
+                   <button class="btn-grad" type="submit"> Send Message</button>
                 </form>
+            </div>    
+           
         </section>
         <!-- Add your main content here -->
     </main>

@@ -76,14 +76,13 @@ a{
     font-size: 1.35rem;
 }
 a:hover{
-    color: grey;
-    text-decoration: underline;
+
     text-underline-offset: 1rem;
     text-decoration-color: rgb(181, 181, 181);
 }
 /****************navlinks hover*****************/
 .nav-links .active{
-    color: rgb(17, 184, 206);
+    color: rgb(241, 145, 19);
     font-size: 1.35rem;
 }
 .sidebar .qtext {
@@ -94,18 +93,18 @@ a:hover{
     background: linear-gradient(
     90deg,
     hsl(240deg 100% 20%) 0%,
-    hsl(224deg 100% 30%) 14%,
-    hsl(221deg 100% 38%) 29%,
-    hsl(221deg 100% 44%) 43%,
-    hsl(220deg 100% 50%) 57%,
-    hsl(213deg 99% 56%) 68%,
-    hsl(205deg 97% 58%) 78%,
-    hsl(197deg 96% 60%) 85%,
-    hsl(190deg 94% 61%) 91%,
-    hsl(190deg 94% 68%) 95%,
-    hsl(189deg 95% 73%) 97%,
-    hsl(187deg 96% 77%) 99%,
-    hsl(185deg 98% 81%) 100%);
+    hsl(281deg 100% 21%) 8%,
+    hsl(304deg 100% 23%) 17%,
+    hsl(319deg 100% 30%) 25%,
+    hsl(329deg 100% 36%) 33%,
+    hsl(336deg 100% 41%) 42%,
+    hsl(346deg 83% 51%) 50%,
+    hsl(3deg 95% 61%) 58%,
+    hsl(17deg 100% 59%) 67%,
+    hsl(30deg 100% 55%) 75%,
+    hsl(40deg 100% 50%) 83%,
+    hsl(48deg 100% 50%) 92%,
+    hsl(55deg 100% 50%) 100%);
      -webkit-background-clip: text; 
  -webkit-text-fill-color: transparent; 
     background-clip: text;
@@ -156,10 +155,15 @@ a:hover{
     color: rgb(255, 255, 255);
 }
 /***************CONTACT SECTION******************/
-.section form{
-    width: 650px;
+.contact_form{
+    width: 100%;
+    margin: 3rem auto 0 auto; /* Center horizontally like other sections */
     text-align: left;
-    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 rem;
 }
 .field .item{
     width: 100%;
@@ -173,24 +177,34 @@ a:hover{
 form .input-box{
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
 }
 form .textarea-field .item{
     resize: vertical;
 }
-form button
-{
-    padding: 12px 32px;
-    background: rgb(17, 184, 206);
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #0ef;
-    width: 100%;
-    cursor: pointer;
-}
-form button:hover{
-    box-shadow: none;
-}
+
+.btn-grad {
+    background-image: linear-gradient(to 
+    right,#ee0979 0%, #ff6a00  51%, #ee0979  100%)}
+.btn-grad {
+            width: 100%;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            border: none;
+            border-radius: 10px;
+            display: block;
+          }
+
+.btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+    }
+         
 /**************SECTION**************************/
 
 .section{
@@ -229,7 +243,7 @@ form button:hover{
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: #c70c53;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -244,7 +258,7 @@ form button:hover{
     margin-top: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px 100px;
+    gap: 100px 100px;
     align-items: center;
     justify-items: center;
   }
@@ -258,22 +272,26 @@ form button:hover{
 }
 /**************PROJECT SECTION******************/
 .project-container{
-  margin-top: 3rem;
+  margin: 2rem 5rem;
 }
 .project-container p{
-    text-align: center;
     color: rgb(161, 156, 156);
-    margin: 1rem;;
+    margin: 1rem 2rem;   
+}
+.project-container h3{
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    margin: 0.5rem 2rem;
+    font-family: "Poppins", sans-serif;
 }
 .project-container a{
-   text-align: center;
    font-size: small;
 }
 .project-container b{
     color: rgb(255, 255, 255);
 }
 .link-project{
-    margin-top: 1rem;    
+     margin: 1rem 2rem;    
     align-items: center;     
     gap: 0.5rem;                   
 }
@@ -287,6 +305,7 @@ form button:hover{
 .project-container .link-project a {
     margin-right: 1.5rem;
     font-size: small;
+    text-decoration: none;
 }
 .project-container:hover{
     background-color: rgba(255, 255, 255, 0.06);
@@ -297,6 +316,10 @@ form button:hover{
     min-height: auto;
     
 }
+.project-container:hover h3{
+    color: rgb(241, 145, 19);
+}
+
 /******************************footer*****************************/
 .footer
 {
