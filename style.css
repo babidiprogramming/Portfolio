@@ -213,6 +213,7 @@ form .textarea-field .item{
     position: relative;
     min-height: 80vh;
     margin: 5vh;
+    
 }
 .section-container{
     display: flex;
@@ -234,6 +235,7 @@ form .textarea-field .item{
     position: relative;
     font-size: 1rem;
     text-decoration: none;
+    margin-left: 5rem;
 }
 .title_header a::after{
     content: '';
@@ -246,6 +248,7 @@ form .textarea-field .item{
   background-color: #c70c53;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
+  top: 1.8rem;
 }
 .title_header a:hover::after{
   transform: scaleX(1);
