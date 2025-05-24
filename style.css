@@ -126,6 +126,36 @@ a:hover{
       align-items: left;
 }
 
+/**----Dynamic Animation----**/
+.section_text_p2{
+    font-size: 1rem;
+    color: gainsboro;
+    justify-content: center;
+}
+.section_text_p2{
+    position: relative;
+    color: gainsboro;
+}
+
+.cursor{
+    color: #fff;
+    animation: blink 1s linear infinite;
+    font-size: 1rem;
+}
+.position_name{
+    height: 3rem;
+    margin: 1rem;
+   max-width: 500px;
+}
+
+@keyframes blink{
+    0% {
+        opacity: 100%;}
+    50%{
+        opacity: 0%;
+    }
+}
+
 /*************MAIN CONTENT***************/
 .content {
     margin-left: 600px;
@@ -156,14 +186,14 @@ a:hover{
 }
 /***************CONTACT SECTION******************/
 .contact_form{
-    width: 100%;
-    margin: 3rem auto 0 auto; /* Center horizontally like other sections */
+    width: auto;
     text-align: left;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
     padding: 0 rem;
+    gap: 100px 100px;
 }
 .field .item{
     width: 100%;
