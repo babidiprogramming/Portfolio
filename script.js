@@ -45,3 +45,17 @@ const typeEffect = () =>{
 
 }
 typeEffect();
+
+/******SPOTLIGHT EFFECT */
+document.querySelectorAll('.spotlight').forEach(spotlight => {
+ spotlight.addEventListener('mousemove', (e) => {
+    const rect = spotlight.getBoundingClientRect();
+    // Calculate the position of the mouse relative to the section
+    spotlight.style.setProperty('--x', `${e.clientX - rect.left}px`);
+    spotlight.style.setProperty('--y', `${e.clientY - rect.top}px`);
+ })
+})
+
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.sidebar').classList.toggle('active');
+});

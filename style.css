@@ -19,6 +19,24 @@ body
   );
  
 }
+.spotlight {
+   background-attachment: fixed;
+}
+.spotlight::before {
+    content: '';
+    position: fixed;
+    inset: 0 0 0 0;
+    pointer-events: none;
+    background: radial-gradient(circle at var(--x) var(--y), 
+    rgba(255, 2233, 230, 0.1), transparent 40%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    border-radius: inherit;
+}
+.spotlight:hover::before{
+    opacity: 1;
+}
 html
 {
     scroll-behavior: smooth;
@@ -173,6 +191,7 @@ a:hover{
     margin: auto;
 
 }
+
 /**************ABOUT SECTION*********************/
 .about-section-container .text-container{
     margin-top: 2rem;
@@ -319,6 +338,7 @@ form .textarea-field .item{
 }
 .project-container a{
    font-size: small;
+   width: auto;
 }
 .project-container b{
     color: rgb(255, 255, 255);
@@ -345,6 +365,7 @@ form .textarea-field .item{
 	-webkit-backdrop-filter: blur(15px);
 	backdrop-filter: blur(15px);
 	border-radius: 8px;
+    box-shadow: 0 0 15px rgba(211, 211, 211, 0.5);
     transition: all 0.3s ease-in-out;
     min-height: auto;
     
