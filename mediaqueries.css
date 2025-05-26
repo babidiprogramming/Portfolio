@@ -144,3 +144,41 @@
     width: 18px;
   }
 }
+@media (max-width: 480px) {
+    .sidebar {
+        display: block;           /* Show sidebar on mobile */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80vw;
+        max-width: 320px;
+        height: 100vh;
+        background: #222;
+        z-index: 2000;
+        overflow-y: auto;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+    .sidebar.active {
+        transform: translateX(0); /* Slide in when active */
+    }
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        z-index: 2100;
+        background: #222;
+        color: #fff;
+        border: none;
+        font-size: 2rem;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .content {
+        margin: 0;
+        padding: 1rem;
+    }
+}
