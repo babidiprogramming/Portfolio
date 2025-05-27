@@ -309,6 +309,8 @@ form .textarea-field .item{
 .tech-container{
     margin-top: 3rem;
     display: grid;
+    max-width: 1200px;
+    margin: 3rem auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 100px 100px;
     align-items: center;
